@@ -1,0 +1,79 @@
+footer {
+  background-color: #b7076b;
+  height: 50vh;
+  margin-top: 10vw;
+}
+
+footer .logo {
+  margin-top: 0.9vw;
+  margin-left: 5vw;
+}
+
+footer .logo h1 {
+  color: #fff;
+}
+
+.footer .copy {
+  text-align: center;
+}
+
+.footer .copy p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: #fff;
+}
+
+.f-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials,
+.contacts,
+.address {
+  margin-left: 7vw;
+}
+
+.socials h3,
+.contacts h3,
+.address h3 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #fff;
+}
+
+.socials li,
+.contacts li,
+.address li {
+  list-style: none;
+  color: #fff;
+  /* padding-bottom: 0.5vw; */
+}
+
+.socials li a,
+.contacts li a,
+.address li a {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #fff;
+  line-height: 2vw;
+  text-decoration: none;
+}
+
+.socials ul li span svg {
+  vertical-align: middle;
+  color: #fff;
+}
+.contacts ul li span svg {
+  vertical-align: middle;
+}
+
+.address ul li span svg {
+  vertical-align: middle;
+}

@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  width: 100%;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+header {
+  height: 100vh;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0px 15px 60px rgba(132, 133, 139, 0.2);
+}
+
+.main-nav {
+  list-style: none;
+  margin-top: 1.5vw;
+  margin-left: 10vw;
+  display: flex;
+  width: 30vw;
+}
+
+.main-nav li {
+  display: inline-block;
+  /* margin-left: 3vw; */
+}
+
+.main-nav li a {
+  color: #312e2e;
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin-left: 6vw;
+  text-decoration: none;
+  border-bottom: 0.5vw solid transparent;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #b7076b;
+  padding-bottom: 0.5vw;
+}
+
+.logo {
+  margin-left: 2.5vw;
+  margin-top: -0.6vw;
+}
+
+.logo h1 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2vw;
+  cursor: pointer;
+  color: #b7076b;
+}
+.buttons {
+  gap: 10vw;
+  margin-left: 10vw;
+  margin-top: 1vw;
+}
+
+.buttons .btn-ready {
+  margin-right: 5vw;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  font-size: 1.171vw;
+  text-decoration: none;
+  border-radius: 0.366vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  animation-name: btnAnimate;
+  animation-duration: 3s;
+  backface-visibility: hidden;
+  animation-delay: 1s;
+}
+
+@keyframes btnAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn-go {
+  color: #fff;
+  background-color: #b7076b;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 300;
+  border: 1px solid #b7076b;
+
+  width: 9vw;
+  font-size: 1.252vw;
+  border-radius: 0.5vw;
+  padding-top: 0.5vw;
+  cursor: pointer;
+
+  padding-bottom: 0.5vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-go:hover,
+.btn-go:active {
+  background-color: #ec0889;
+  border: 1px solid #ec0889;
+}
+
+.btn-ready {
+  background-color: #fff;
+  color: #b7076b;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid #b7076b;
+  width: 9vw;
+  border-radius: 0.5vw;
+  font-size: 1.171vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-contact {
+  color: #fff;
+  background-color: #b7076b;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 300;
+  border: 1px solid #b7076b;
+  width: 15vw;
+  font-size: 1.252vw;
+  border-radius: 0.5vw;
+  padding-top: 0.5vw;
+  cursor: pointer;
+
+  padding-bottom: 0.5vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-ready:hover,
+.btn-ready:active {
+  color: #fff;
+  background-color: #ec0889;
+  border: 1px solid #ec0889;
+}
+
+.hero-text {
+  float: left;
+  clear: both;
+  width: 40vw;
+  margin-top: 10vw;
+  margin-left: 8vw;
+}
+
+.hero-text h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3vw;
+}
+.hero-text p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+}
+
+.hero-text span h1 {
+  font-size: 3vw;
+}
+
+.my-img {
+  float: right;
+  margin-top: 5vw;
+}
+.my-img img {
+  position: relative;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+  transform: rotate(20deg);
+  margin-right: 5vw;
+}
+
+/*------------------------- FIRST SECTION----------------------*/
+
+.sec-1 {
+  display: flex;
+  background-color: #fff;
+  margin-top: 10vw;
+}
+
+.about-box {
+  width: 25vw;
+  margin-right: 4vw;
+  background-color: #f4f4f4;
+  box-shadow: 10px 12px 1px #b7076b;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  margin-left: 4vw;
+  border-radius: 5vw;
+}
+.about-box-2 {
+  width: 25vw;
+  margin-right: 5vw;
+  background-color: #f4f4f4;
+  box-shadow: 10px 12px 1px #b7076b;
+  padding-left: 2vw;
+  padding-top: 2vw;
+
+  border-radius: 5vw;
+}
+.about-box-3 {
+  width: 25vw;
+  background-color: #f4f4f4;
+  box-shadow: 10px 12px 1px #b7076b;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  border-radius: 5vw;
+}
+
+.about-box h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #312e2e;
+}
+
+.about-box li {
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 2.5vw;
+  color: #312e2e;
+  margin-left: -2vw;
+}
+.about-box-2 h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #312e2e;
+}
+
+.about-box-2 li {
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.5vw;
+  color: #312e2e;
+  margin-left: -2vw;
+  padding-bottom: 1vw;
+}
+.about-box-3 h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #312e2e;
+}
+
+.about-box-3 li {
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 1vw;
+  font-weight: 500;
+  line-height: 2.5vw;
+  color: #312e2e;
+  margin-left: -2vw;
+}
+
+footer {
+  background-color: #fff;
+  height: 50vh;
+  margin-top: 10vw;
+  padding-left: 0;
+}
+
+.footer .copy {
+  text-align: center;
+}
+
+.footer .copy p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: #fff;
+}
+
+footer .logo {
+  margin-top: 0.9vw;
+  margin-left: 5vw;
+}
+
+.f-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials,
+.contacts,
+.address {
+  margin-left: 7vw;
+}
+
+.socials h3,
+.contacts h3,
+.address h3 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #b7076b;
+}
+
+.socials li,
+.contacts li,
+.address li {
+  list-style: none;
+  /* padding-bottom: 0.5vw; */
+}
+
+.socials li a,
+.contacts li a,
+.address li a {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #312e2e;
+  line-height: 2vw;
+  text-decoration: none;
+}
+
+.socials ul li span svg {
+  vertical-align: middle;
+}
+.contacts ul li span svg {
+  vertical-align: middle;
+}
+
+.address ul li span svg {
+  vertical-align: middle;
+}

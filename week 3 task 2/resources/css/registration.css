@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  width: 100%;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0px 15px 60px rgba(132, 133, 139, 0.2);
+}
+
+.main-nav {
+  list-style: none;
+  margin-top: 1.5vw;
+  margin-left: 10vw;
+  display: flex;
+  width: 30vw;
+}
+
+.main-nav li {
+  display: inline-block;
+  /* margin-left: 3vw; */
+}
+
+.main-nav li a {
+  color: #312e2e;
+  font-family: "Karla";
+  font-style: normal;
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin-left: 6vw;
+  text-decoration: none;
+  border-bottom: 0.5vw solid transparent;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #b7076b;
+  padding-bottom: 0.5vw;
+}
+
+.logo {
+  margin-left: 2.5vw;
+  margin-top: -0.6vw;
+}
+
+.logo h1 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2vw;
+  cursor: pointer;
+  color: #b7076b;
+}
+.buttons {
+  gap: 10vw;
+  margin-left: 10vw;
+  margin-top: 1vw;
+}
+
+.buttons .btn-ready {
+  margin-right: 5vw;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  font-size: 1.171vw;
+  text-decoration: none;
+  border-radius: 0.366vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  animation-name: btnAnimate;
+  animation-duration: 3s;
+  backface-visibility: hidden;
+  animation-delay: 1s;
+}
+
+@keyframes btnAnimate {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn-go {
+  color: #fff;
+  background-color: #b7076b;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 300;
+  border: 1px solid #b7076b;
+  width: 9vw;
+  font-size: 1.252vw;
+  border-radius: 0.5vw;
+  padding-top: 0.5vw;
+  cursor: pointer;
+
+  padding-bottom: 0.5vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-go:hover,
+.btn-go:active {
+  background-color: #ec0889;
+  border: 1px solid #ec0889;
+}
+
+.btn-ready {
+  background-color: #fff;
+  color: #b7076b;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid #b7076b;
+  width: 9vw;
+  border-radius: 0.5vw;
+  font-size: 1.171vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-contact {
+  color: #fff;
+  background-color: #b7076b;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 300;
+  border: 1px solid #b7076b;
+  width: 15vw;
+  font-size: 1.252vw;
+  border-radius: 0.5vw;
+  padding-top: 0.5vw;
+  cursor: pointer;
+
+  padding-bottom: 0.5vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-ready:hover,
+.btn-ready:active {
+  color: #fff;
+  background-color: #ec0889;
+  border: 1px solid #ec0889;
+}
+
+.cont {
+  width: 50%;
+  /* height: 45.962vw; */
+  background-color: white;
+  position: relative;
+  margin-left: 25vw;
+  margin-top: 10vw;
+}
+
+.cont h2 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3vw;
+  color: #312e2e;
+  text-align: center;
+  margin-bottom: 6vw;
+}
+
+.cont label {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2vw;
+  display: block;
+  margin-bottom: 0.732vw;
+  color: #252b42;
+  margin-left: 10vw;
+}
+
+.cont textarea {
+  width: 50%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0.586vw 0.366vw;
+  border-radius: 0.5vw;
+  margin-bottom: 1.464vw;
+}
+
+.cont input {
+  width: 50%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1.286vw 0.366vw;
+  border-radius: 1.464vw;
+  margin-bottom: 1.464vw;
+  margin-left: 10vw;
+}
+
+.cont input[type="text"] {
+  font-size: 1vw;
+}
+.cont input[type="email"] {
+  font-size: 1vw;
+}
+
+.cont textarea[name="message"] {
+  font-size: 0.9vw;
+  padding-left: 0.3vw;
+  height: 5vw;
+  margin-left: 10vw;
+}
+
+.cont .btnn {
+  width: 15vw;
+  background-color: #b7076b;
+  color: #fff;
+  padding: 0.732vw 1.464vw;
+  border-radius: 1.464vw;
+  font-size: 1.245vw;
+  cursor: pointer;
+  border: none;
+  margin-top: 1vw;
+  margin-left: 10vw;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.cont .btnn:hover {
+  width: 16vw;
+  background-color: #e4208f;
+}
+
+form select {
+  margin-left: 10vw;
+  margin-bottom: 2vw;
+  width: 20vw;
+  padding: 1vw 0.5vw;
+  border-radius: 1vw;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.3vw;
+}
+
+footer {
+  background-color: #b7076b;
+  height: 50vh;
+  margin-top: 10vw;
+}
+
+footer .logo {
+  margin-top: 0.9vw;
+  margin-left: 5vw;
+}
+
+footer .logo h1 {
+  color: #fff;
+}
+
+.footer .copy {
+  text-align: center;
+}
+
+.footer .copy p {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3vw;
+  color: #fff;
+}
+
+.f-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.socials,
+.contacts,
+.address {
+  margin-left: 7vw;
+}
+
+.socials h3,
+.contacts h3,
+.address h3 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #fff;
+}
+
+.socials li,
+.contacts li,
+.address li {
+  list-style: none;
+  color: #fff;
+  /* padding-bottom: 0.5vw; */
+}
+
+.socials li a,
+.contacts li a,
+.address li a {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #fff;
+  line-height: 2vw;
+  text-decoration: none;
+}
+
+.socials ul li span svg {
+  vertical-align: middle;
+  color: #fff;
+}
+.contacts ul li span svg {
+  vertical-align: middle;
+}
+
+.address ul li span svg {
+  vertical-align: middle;
+}
